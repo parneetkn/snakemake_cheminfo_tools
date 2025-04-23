@@ -1,0 +1,10 @@
+# environment.yml
+name: snakemake_cheminfo_env
+channels:
+  - conda-forge
+dependencies:
+  - python=3.10
+  - numpy=1.24.4
+  - rdkit
+  - mordred
+  - snakemake

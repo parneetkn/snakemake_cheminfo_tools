@@ -1,0 +1,6 @@
+Building DAG of jobs...
+MissingInputException in rule all in file /Users/parneet/Desktop/code/snakemake_cheminfo_tools/Snakefile, line 13:
+Missing input files for rule all:
+    affected files:
+        Structure2D_COMPOUND_CID_2244.sdf_descriptors.csv
+        Structure2D_COMPOUND_CID_4091.sdf_descriptors.csv

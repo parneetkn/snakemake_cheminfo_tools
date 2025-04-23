@@ -1,0 +1,27 @@
+Building DAG of jobs...
+Using shell: /bin/bash
+Provided cores: 1 (use --cores to define parallelism)
+Rules claiming more threads will be scaled down.
+Job stats:
+job                    count
+-------------------  -------
+all                        1
+compute_all_mordred        1
+total                      2
+
+Select jobs to execute...
+
+[Wed Apr 23 14:30:05 2025]
+rule compute_all_mordred:
+    output: results/mordred/all_descriptors.csv
+    jobid: 1
+    reason: Missing output files: results/mordred/all_descriptors.csv
+    resources: tmpdir=/var/folders/4_/pzgztxqj1xz63tcdm584280h0000gn/T
+
+Waiting at most 5 seconds for missing files.
+MissingOutputException in rule compute_all_mordred in file /Users/parneet/Desktop/code/snakemake_cheminfo_tools/Snakefile, line 10:
+Job 1  completed successfully, but some output files are missing. Missing files after 5 seconds. This might be due to filesystem latency. If that is the case, consider to increase the wait time with --latency-wait:
+results/mordred/all_descriptors.csv
+Shutting down, this might take some time.
+Exiting because a job execution failed. Look above for error message
+Complete log: .snakemake/log/2025-04-23T143004.928370.snakemake.log

@@ -1,0 +1,7 @@
+Building DAG of jobs...
+MissingInputException in rule compute_mordred in file /Users/parneet/Desktop/code/snakemake_cheminfo_tools/Snakefile, line 17:
+Missing input files for rule compute_mordred:
+    output: results/Structure2D_COMPOUND_CID_2244.sdf_temp.csv
+    wildcards: sample=Structure2D_COMPOUND_CID_2244.sdf
+    affected files:
+        data/Structure2D_COMPOUND_CID_2244.sdf.sdf

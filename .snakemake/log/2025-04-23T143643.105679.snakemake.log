@@ -1,0 +1,35 @@
+Building DAG of jobs...
+Using shell: /bin/bash
+Provided cores: 1 (use --cores to define parallelism)
+Rules claiming more threads will be scaled down.
+Job stats:
+job                count
+---------------  -------
+all                    1
+compute_mordred        2
+merge_csv              1
+total                  4
+
+Select jobs to execute...
+
+[Wed Apr 23 14:36:46 2025]
+rule compute_mordred:
+    input: data/Structure2D_COMPOUND_CID_4091.sdf
+    output: results/Structure2D_COMPOUND_CID_4091.sdf_temp.csv
+    jobid: 3
+    reason: Missing output files: results/Structure2D_COMPOUND_CID_4091.sdf_temp.csv
+    wildcards: sample=Structure2D_COMPOUND_CID_4091.sdf
+    resources: tmpdir=/var/folders/4_/pzgztxqj1xz63tcdm584280h0000gn/T
+
+[Wed Apr 23 14:36:46 2025]
+Error in rule compute_mordred:
+    jobid: 3
+    input: data/Structure2D_COMPOUND_CID_4091.sdf
+    output: results/Structure2D_COMPOUND_CID_4091.sdf_temp.csv
+    shell:
+        python scripts/compute_mordred.py data/Structure2D_COMPOUND_CID_4091.sdf results/Structure2D_COMPOUND_CID_4091.sdf_temp.csv
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+Shutting down, this might take some time.
+Exiting because a job execution failed. Look above for error message
+Complete log: .snakemake/log/2025-04-23T143643.105679.snakemake.log

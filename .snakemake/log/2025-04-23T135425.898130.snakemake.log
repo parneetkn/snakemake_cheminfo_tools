@@ -1,0 +1,48 @@
+Assuming unrestricted shared filesystem usage.
+None
+host: Parneets-MacBook-Air.local
+Building DAG of jobs...
+Using shell: /bin/bash
+Provided cores: 1 (use --cores to define parallelism)
+Rules claiming more threads will be scaled down.
+Job stats:
+job                    count
+-------------------  -------
+all                        1
+compute_all_mordred        1
+total                      2
+
+Select jobs to execute...
+Execute 1 jobs...
+[Wed Apr 23 13:54:25 2025]
+localrule compute_all_mordred:
+    output: results/mordred/all_descriptors.csv
+    jobid: 1
+    reason: Missing output files: results/mordred/all_descriptors.csv
+    resources: tmpdir=/var/folders/4_/pzgztxqj1xz63tcdm584280h0000gn/T
+
+Waiting for more resources.
+RuleException:
+CalledProcessError in file "/Users/parneet/Desktop/code/snakemake_cheminfo_tools/Snakefile", line 16:
+Command 'set -euo pipefail;  python scripts/compute_mordred.py  results/mordred/all_descriptors.csv' returned non-zero exit status 2.
+[Wed Apr 23 13:54:25 2025]
+Error in rule compute_all_mordred:
+    message: None
+    jobid: 1
+    output: results/mordred/all_descriptors.csv
+    shell:
+        python scripts/compute_mordred.py  results/mordred/all_descriptors.csv
+        (command exited with non-zero exit code)
+Shutting down, this might take some time.
+Exiting because a job execution failed. Look below for error messages
+[Wed Apr 23 13:54:25 2025]
+Error in rule compute_all_mordred:
+    message: None
+    jobid: 1
+    output: results/mordred/all_descriptors.csv
+    shell:
+        python scripts/compute_mordred.py  results/mordred/all_descriptors.csv
+        (command exited with non-zero exit code)
+Complete log(s): /Users/parneet/Desktop/code/snakemake_cheminfo_tools/.snakemake/log/2025-04-23T135425.898130.snakemake.log
+WorkflowError:
+At least one job did not complete successfully.
