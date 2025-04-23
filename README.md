@@ -1,4 +1,4 @@
-# snakemake_cheminfo_tools
+## snakemake_cheminfo_tools
 
 ## Overview
 This is a sample Snakemake project for computing **Mordred** chemical descriptors from SDF files. The project leverages Snakemake to automate the workflow of descriptor calculation and output CSV generation. 
@@ -6,13 +6,13 @@ This is a sample Snakemake project for computing **Mordred** chemical descriptor
 ## Project Structure
 
 The project directory is structured as follows:<br>
->snakemake_cheminfo_tools/
->>Snakefile
->>eviron.yaml
->>scripts/
->>>compute_mordred.py
->>data/ # your input .sdf files go here\
->>results/ # output .csv files will be saved here\
+>snakemake_cheminfo_tools/ <br>
+>>Snakefile <br>
+>>eviron.yaml <br>
+>>scripts/ <br>
+>>>compute_mordred.py <br>
+>>data/ # your input .sdf files go here <br>
+>>results/ # output .csv files will be saved here <br>
 
 
 ## Prerequisites
@@ -25,8 +25,8 @@ The project directory is structured as follows:<br>
 
 1. Run the following command to set up the environment-
 
-`conda env create -f environment.yml`
-`conda activate snakemake_cheminfo_env`
+`conda env create -f environment.yml` <br>
+`conda activate snakemake_cheminfo_env` <br>
 
 2. Run the snakemake pipeline-
 
