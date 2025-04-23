@@ -13,6 +13,18 @@ The project directory is structured as follows:<br>
 >>>compute_mordred.py <br>
 >>data/ # your input .sdf files go here <br>
 >>results/ # output .csv files will be saved here <br>
+## 📁 Project Directory Structure
+
+```bash
+snakemake_cheminfo_tools/
+├── Snakefile                 # Main Snakemake workflow file
+├── environment.yaml          # Conda environment file for dependencies
+├── scripts/                  # Python scripts used in the pipeline
+│   └── compute_mordred.py    # Script to compute Mordred descriptors
+├── data/                     # Input data folder
+│   └── sdf/                  # Place your .sdf files here
+├── results/                  # Output folder
+│   └── mordred/              # Output .csv descriptor files will be saved here
 
 
 ## Prerequisites
