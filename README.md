@@ -5,16 +5,14 @@ This is a sample Snakemake project for computing **Mordred** chemical descriptor
 
 ## Project Structure
 
-The project directory is structured as follows:
-snakemake_cheminfo_tools/
-├── Snakefile\
-├── eviron.yaml\
-├── scripts/\
-│   └── compute_mordred.py\
-├── data/\
-│   └── sdf/  # your input .sdf files go here\
-├── results/\
-│   └── mordred/  # output .csv files will be saved here\
+The project directory is structured as follows:<br>
+>snakemake_cheminfo_tools/
+>>Snakefile
+>>eviron.yaml
+>>scripts/
+>>>compute_mordred.py
+>>data/ # your input .sdf files go here\
+>>results/ # output .csv files will be saved here\
 
 
 ## Prerequisites
@@ -25,12 +23,12 @@ snakemake_cheminfo_tools/
 
 ## Steps to run:
 
-1. Run the following command to set up the environment-\
+1. Run the following command to set up the environment-
 
-`conda env create -f environment.yml`\
-`conda activate snakemake_cheminfo_env`\
+`conda env create -f environment.yml`
+`conda activate snakemake_cheminfo_env`
 
-2. Run the snakemake pipeline-\
+2. Run the snakemake pipeline-
 
 `snakemake --cores 1`
 
